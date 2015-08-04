@@ -1,14 +1,14 @@
 {
-  "name": "contractor-utils",
+  "name": "rate-contractor",
   "version": "1.0.0",
-  "description": "Utilities to add and rate contractors",
-  "main": "contractor-utils.js",
+  "description": "Rate contractor utility",
+  "main": "rate-contractor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joe Turner <jturner@thinkful.com>",
-  "license": "UNLICESNED",
+  "license": "UNLICENSED",
   "dependencies": {
-    "nedb": "^1.1.2"
+    "contractor-db": "file:../contractor-db"
   }
 }

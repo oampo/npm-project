@@ -1,0 +1,14 @@
+{
+  "name": "add-contractor",
+  "version": "1.0.0",
+  "description": "Add contractor utility",
+  "main": "add-contractor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Turner <jturner@thinkful.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "contractor-db": "file:../contractor-db"
+  }
+}

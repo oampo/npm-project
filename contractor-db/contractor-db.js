@@ -1,21 +1,13 @@
-// Contractor utilities
-// Usage examples:
-// Adding a new contractor
-// node contractor-utils.js add joe
-//
-// Rating a contractor
-// node contractor-utils.js rate joe 5
-//
-// Requirements: NeDB (https://github.com/louischatriot/nedb)
+// Contractor database layer
 
 var path = require('path');
 
 var Datastore = require('nedb');
 
 // Database layer
-var Database = function() {
+var Database = function(path) {
     this.store = new Datastore({
-        filename: path.join(__dirname, 'contractors.db'),
+        filename: path,
         autoload: true
     });
 };
@@ -54,12 +46,5 @@ Database.prototype.rateContractor = function(name, rating) {
     }.bind(this));
 };
 
-// Utilities
-var database = new Database();
-if (process.argv[2] == 'add') {
-    database.addContractor(process.argv[3], 0);
-}
-else if (process.argv[2] == 'rate') {
-    database.rateContractor(process.argv[3], process.argv[4]);
-}
+module.exports = Database;
 

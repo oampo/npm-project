@@ -1,0 +1,14 @@
+{
+  "name": "contractor-db",
+  "version": "1.0.0",
+  "description": "Contractors database layer",
+  "main": "contractor-db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Turner <jturner@thinkful.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "nedb": "^1.1.2"
+  }
+}
